@@ -13,7 +13,7 @@ import config from "./config"
 //mongodb+srv://leonel:<password>@clusterdemo.j4c5uyo.mongodb.net/test
     
     });
-      console.log("connected to database :", db.connection.name); 
+      console.log("connected to database :", db.connection.name);  
   }catch(error)
    {console.error(error)}
 })();
