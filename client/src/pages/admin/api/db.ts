@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import config from "../../../../../api/src/config"
+//import config from "../../../../../api/src/config"
 
 /**
  * 0 = disconnected
@@ -35,16 +35,16 @@ export const connect = async() => {
 */
 
 
-        try{
-        const db= await mongoose.connect(`mongodb+srv://mundomarket:${config.MONGO_PASSWORD}@cluster0.tqn5t.mongodb.net/${config.MONGO_DATABASE}?retryWrites=true&w=majority`,{
+        // try{
+        // //const db= await mongoose.connect(`mongodb+srv://mundomarket:${config.MONGO_PASSWORD}@cluster0.tqn5t.mongodb.net/${config.MONGO_DATABASE}?retryWrites=true&w=majority`,{
 
-        });
-        console.log("connected to database :", db.connection.name);
-        }catch(error)
-        {console.error(error)}
+        // });
+        // console.log("connected to database :", db.connection.name);
+        // }catch(error)
+        // {console.error(error)}
 
 
-        }
+         }
 
 
 
